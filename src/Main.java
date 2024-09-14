@@ -2,6 +2,14 @@
 public class Main {
     public static void main(String[] args) {
         makeDeposit(50000,10000, 1000);
+        User batman = new User("Bruce", "Wayne", "bwayne@dc.com", "IamBatman#3");
+        User superman = new User("kal-El", "Kent", "kkent@dc.com", "Kryptonite#1");
+
+        superman.setFirstName("clark");
+        System.out.println(superman.getFirstName());
+
+        batman.setPassword("DarkKnight#1");
+        System.out.println(batman.getPassword());
     }
 
     public static String makeDeposit(int savingsAccountBalance, int indexFundBalance, int depositAmount) {
